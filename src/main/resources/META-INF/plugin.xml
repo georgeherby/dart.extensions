@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.herbert.george.dart.extensions</id>
+    <name>dart.extensions</name>
+    <vendor>George Herbert</vendor>
+    <description><![CDATA[
+Dart Extensions initial release ready for first use
+]]></description>
+    <idea-version since-build="141.0" />
+    <depends>com.intellij.modules.java</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="DartTemplateProvider" />
+        <liveTemplateContext implementation="DartContext" />
+    </extensions>
+</idea-plugin>

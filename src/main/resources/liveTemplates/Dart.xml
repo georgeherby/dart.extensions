@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Dart">
+    <template name="extensionMethod" value="extension $ExtensionName$ on $Type$ {&#10;  $ReturnType$ $methodName$() {&#10;}&#10;}" description="Create method extension" toReformat="false" toShortenFQNames="true">
+        <variable name="ExtensionName" expression="&quot;ExtensionName&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="Type" expression="&quot;Type&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ReturnType" expression="&quot;ReturnType&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="methodName" expression="&quot;methodName&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="extensionOperator" value="extension $ExtensionName$ on $Type$ {&#10;  $ReturnType$ operator $ReturnType$($Type$ $variable_name$() {&#10;}&#10;}" description="Create operator extension" toReformat="false" toShortenFQNames="true">
+        <variable name="ExtensionName" expression="&quot;ExtensionName&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="Type" expression="&quot;Type&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ReturnType" expression="&quot;ReturnType&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="variable_name" expression="&quot;variable_name&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+    <template name="extensionProperty" value="extension $ExtensionName$ on $Type$ {&#10;  $ReturnType$ get $propertyName$ {&#10;}&#10;}" description="Create property extension" toReformat="false" toShortenFQNames="true">
+        <variable name="ExtensionName" expression="&quot;ExtensionName&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="Type" expression="&quot;Type&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ReturnType" expression="&quot;ReturnType&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="propertyName" expression="&quot;propertyName&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART" value="true" />
+        </context>
+    </template>
+</templateSet>
